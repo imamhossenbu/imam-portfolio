@@ -1,3 +1,4 @@
+import Photo from "@/components/Photo";
 import Socials from "@/components/Socials";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from 'react-icons/fi'
@@ -6,8 +7,8 @@ export default function Home() {
   return (
     <section className="h-full">
       <div className="w-[95%] md:w-[85%] mx-auto h-full">
-        <div className="flex flex-col gap-8 lg:flex-row justify-between items-center lg:pt-8 lg:pb-8">
-          <div className="text-center lg:text-left">
+        <div className="flex flex-col gap-8  lg:flex-row justify-between items-center lg:pt-8 lg:pb-12">
+          <div className="text-center order-2 lg:order-none lg:text-left">
             <span className="text-xl">Web Developer</span>
             <h1 className="h1 mt-4">Hello I'm <br /> <span className="text-[var(--accent)]">Imam Hossen</span></h1>
             <p className="max-w-[500px] text-white/80 mt-4 mb-6">
@@ -24,8 +25,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div>
-            photo
+          <div className="order-1 lg:order-none" >
+
+            <Photo />
           </div>
         </div>
       </div>
