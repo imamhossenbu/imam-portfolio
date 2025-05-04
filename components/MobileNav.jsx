@@ -3,9 +3,10 @@
 import { Sheet, SheetTrigger, SheetContent } from '@/components/ui/sheet';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { CiMenuFries } from "react-icons/ci";
+import { CiMenuBurger } from "react-icons/ci";
 import { useState } from 'react';
 import { Button } from './ui/button';
+import Image from 'next/image';
 
 const links = [
   { name: 'Home', path: '/' },
@@ -23,15 +24,22 @@ const MobileNav = () => {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger className="flex justify-center items-center">
-        <CiMenuFries className='text-[32px] text-[var(--accent)]' />
+        <CiMenuBurger className='text-[32px] text-[var(--accent)]' />
       </SheetTrigger>
 
       <SheetContent className='flex flex-col'>
-        <div className='mt-28 mb-12 text-center'>
-          <Link href="/" onClick={handleClose}>
-            <h2 className='text-4xl font-semibold'>
-              I<span className='text-[var(--accent)]'>H</span>
-            </h2>
+        <div className='mt-28 mb-12 flex justify-center items-center'>
+          <Link onClick={handleClose} href="/" aria-label="Go to homepage">
+            <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-[#00ff19] shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out">
+              <Image
+                src="/assets/profile-logo.png"
+                width={80}
+                height={80}
+                alt="Imam Hossen Logo"
+                className="object-cover w-full h-full"
+                priority
+              />
+            </div>
           </Link>
         </div>
 
