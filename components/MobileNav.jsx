@@ -51,7 +51,7 @@ const MobileNav = () => {
         </nav>
         <div className='text-center mt-6'>
           <Link onClick={handleClose} href="/contact">
-            <Button className="cursor-pointer bg-[var(--accent)] hover:bg-[var(--accent-hover)] text-[var(--primary)]">Hire Me</Button>
+            <Button className="cursor-pointer rounded-full bg-[var(--accent)] hover:bg-[var(--accent-hover)] text-[var(--primary)]">Hire Me</Button>
           </Link>
         </div>
       </SheetContent>

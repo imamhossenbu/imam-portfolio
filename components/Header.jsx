@@ -20,7 +20,7 @@ const Header = () => {
                 <div className='hidden lg:flex items-center gap-8'>
                     <Nav />
                     <Link href="/contact">
-                        <Button className="cursor-pointer bg-[var(--accent)] hover:bg-[var(--accent-hover)] text-[var(--primary)]">Hire Me</Button>
+                        <Button className="cursor-pointer text-md rounded-full bg-[var(--accent)] hover:bg-[var(--accent-hover)] text-[var(--primary)]">Hire Me</Button>
                     </Link>
                 </div>
 
