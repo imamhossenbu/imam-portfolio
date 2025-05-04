@@ -26,7 +26,6 @@ const links = [
 
 const Nav = () => {
     const pathname = usePathname();
-    console.log(pathname);
     return (
         <nav className='text-white flex gap-8'>
             {
