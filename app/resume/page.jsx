@@ -114,7 +114,7 @@ const skills = {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from "@/components/ui/tooltip";
 import { motion } from "framer-motion";
-import { ScrollArea } from "@/components/ui/scroll-area";
+
 
 const Resume = () => {
   return <motion.div
@@ -122,7 +122,7 @@ const Resume = () => {
     animate={{ opacity: 1, transition: { delay: 2.4, duration: 0.4, ease: "easeIn" } }}
     className="flex justify-center "
   >
-    <div className="w-[95%] md:w-[85%] mx-auto">
+    <div className="w-[95%] md:w-[85%] mt-20 lg:mt-40 mx-auto">
       <Tabs defaultValue="about" className="flex flex-col lg:flex-row gap-[70px]">
         {/* Sidebar Tabs */}
 
@@ -144,21 +144,20 @@ const Resume = () => {
               </p>
 
               {/* Info Cards */}
-              <ScrollArea className="h-[300px]">
-                <div className="grid grid-cols-1  lg:grid-cols-2 gap-6 max-w-4xl mx-auto lg:mx-0">
-                  {about.Info.map((info, index) => (
-                    <div
-                      key={index}
-                      className="bg-[#232329] border border-white/10 p-6 rounded-xl shadow-md hover:scale-[1.02] transition-transform duration-300 ease-in-out"
-                    >
-                      <h4 className="text-sm text-accent font-semibold uppercase tracking-wide">
-                        {info.fieldname}
-                      </h4>
-                      <p className="text-white text-lg font-medium mt-2">{info.fieldvalue}</p>
-                    </div>
-                  ))}
-                </div>
-              </ScrollArea>
+
+              <div className="grid grid-cols-1  lg:grid-cols-2 gap-6 max-w-4xl mx-auto lg:mx-0">
+                {about.Info.map((info, index) => (
+                  <div
+                    key={index}
+                    className="bg-[#232329] border border-white/10 p-6 rounded-xl shadow-md hover:scale-[1.02] transition-transform duration-300 ease-in-out"
+                  >
+                    <h4 className="text-sm text-accent font-semibold uppercase tracking-wide">
+                      {info.fieldname}
+                    </h4>
+                    <p className="text-white text-lg font-medium mt-2">{info.fieldvalue}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </TabsContent>
 
@@ -170,28 +169,27 @@ const Resume = () => {
             </div>
             <div>
               <div>
-                <ScrollArea className="h-[300px]">
-                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px] my-8">
-                    {education.items.map((item, index) => {
-                      return (
-                        <li
-                          key={index}
-                          className="bg-[#232329] h-[180px] py-4 space-y-1 px-8 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 transition-transform duration-300 ease-in-out hover:scale-[1.05] hover:shadow-lg"
-                        >
-                          <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[250px] min-h-[80px] font-semibold text-center lg:text-left">
-                            {item.degree}
-                          </h3>
-                          <div className="flex items-center gap-3">
-                            <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/70">{item.institution}</p>
-                          </div>
-                        </li>
 
-                      )
-                    })}
-                  </ul>
-                </ScrollArea>
+                <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px] my-8">
+                  {education.items.map((item, index) => {
+                    return (
+                      <li
+                        key={index}
+                        className="bg-[#232329] h-[180px] py-4 space-y-1 px-8 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 transition-transform duration-300 ease-in-out hover:scale-[1.05] hover:shadow-lg"
+                      >
+                        <span className="text-accent">{item.duration}</span>
+                        <h3 className="text-xl max-w-[250px] min-h-[80px] font-semibold text-center lg:text-left">
+                          {item.degree}
+                        </h3>
+                        <div className="flex items-center gap-3">
+                          <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                          <p className="text-white/70">{item.institution}</p>
+                        </div>
+                      </li>
+
+                    )
+                  })}
+                </ul>
               </div>
             </div>
           </TabsContent>
@@ -203,29 +201,27 @@ const Resume = () => {
                 <p className="max-w-[600px] text-white/70 mx-auto lg:mx-0">{skills.description}</p>
               </div>
               <div>
-                <ScrollArea className="h-[300px]">
-                  <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mb-20  gap-[30px]">
-                    {skills.skillList.map((skill, index) => {
-                      return (
-                        <li key={index}>
-                          {/* Wrap TooltipTrigger and TooltipContent inside TooltipProvider */}
-                          <TooltipProvider delayDuration={100}>
-                            <Tooltip>
-                              <TooltipTrigger className="w-full h-[120px] rounded-xl bg-[#232329] flex justify-center items-center group transition-transform duration-300 ease-in-out hover:scale-[1.05] hover:shadow-lg">
-                                <div className="text-4xl group-hover:text-accent transition-all duration-300">
-                                  {skill.icon}
-                                </div>
-                              </TooltipTrigger>
-                              <TooltipContent>
-                                <p className="capitalize">{skill.name}</p>
-                              </TooltipContent>
-                            </Tooltip>
-                          </TooltipProvider>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </ScrollArea>
+                <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mb-20  gap-[30px]">
+                  {skills.skillList.map((skill, index) => {
+                    return (
+                      <li key={index}>
+                        {/* Wrap TooltipTrigger and TooltipContent inside TooltipProvider */}
+                        <TooltipProvider delayDuration={100}>
+                          <Tooltip>
+                            <TooltipTrigger className="w-full h-[120px] rounded-xl bg-[#232329] flex justify-center items-center group transition-transform duration-300 ease-in-out hover:scale-[1.05] hover:shadow-lg">
+                              <div className="text-4xl group-hover:text-accent transition-all duration-300">
+                                {skill.icon}
+                              </div>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                              <p className="capitalize">{skill.name}</p>
+                            </TooltipContent>
+                          </Tooltip>
+                        </TooltipProvider>
+                      </li>
+                    );
+                  })}
+                </ul>
 
               </div>
 

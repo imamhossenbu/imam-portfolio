@@ -137,4 +137,12 @@
   .h3 {
     @apply text-[20px] md:text-[28px] lg:text-[36px] leading-[1.3] font-semibold;
   }
+
+  .text-outline {
+    -webkit-text-stroke: 1px #ffffff;
+    /* outline width and color */
+    color: transparent;
+    /* transparent fill */
+  }
+
 }

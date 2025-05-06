@@ -9,8 +9,8 @@ import { ReactTyped } from 'react-typed';
 export default function Home() {
   return (
     <section className=" h-full">
-      <div className="w-[95%] md:w-[85%] mb-12 lg:mb-16 mx-auto h-full">
-        <div className="flex flex-col gap-8  lg:flex-row justify-between items-center lg:pt-4 lg:pb-8">
+      <div className="w-[95%] md:w-[85%] my-24 lg:my-32 mx-auto h-full">
+        <div className="flex flex-col gap-8  lg:flex-row justify-between items-center lg:pt-4 ">
           <div className="text-center order-2 lg:order-none lg:text-left">
             <h1 className="h2 mt-4">
               Hello! I'm <br />
