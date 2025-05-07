@@ -34,7 +34,7 @@ const Contact = () => {
   return (
     <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: 2.4, duration: 0.4, ease: "easeIn" } }} className="py-6">
       <div className="w-[95%] lg:w-[85%] mx-auto my-24 lg:my-32">
-        <div className="flex flex-col lg:flex-row gap-[30px]">
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-20">
           {/* form */}
           <div className="order-2 lg:order-none w-full lg:w-[55%] hover:scale-103 transition-all duration-500">
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
@@ -55,7 +55,7 @@ const Contact = () => {
             </form>
           </div>
           {/* info */}
-          <div className="flex-1 flex items-center lg:justify-between mb-8 lg:mb-0 w-full lg:w-[45%] hover:scale-103 transition-all duration-500">
+          <div className="flex-1 flex items-center justify-center lg:justify-between mb-8 lg:mb-0 w-full lg:w-[45%] hover:scale-103 transition-all duration-500">
             <ul className="flex flex-col gap-10">
               {info.map((item, index) => {
                 return (
