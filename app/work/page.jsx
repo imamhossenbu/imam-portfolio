@@ -19,6 +19,7 @@ const projects = [
   {
     num: "01",
     category: "frontend",
+    name: "PeddyCare",
     title: "project 1",
     description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum impedit repudiandae, ratione aliquam aliquid quas magnam ipsa officia magni amet.",
     stack: [{ name: "HTML 5" }, { name: "CSS 3" }, { name: "Javascript" },],
@@ -29,6 +30,7 @@ const projects = [
   {
     num: "02",
     category: "frontend",
+    name: "HonestView",
     title: "project 1",
     description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum impedit repudiandae, ratione aliquam aliquid quas magnam ipsa officia magni amet.",
     stack: [{ name: "HTML 5" }, { name: "CSS 3" }, { name: "Javascript" },],
@@ -39,6 +41,7 @@ const projects = [
   {
     num: "03",
     category: "frontend",
+    name: "MovieVerse",
     title: "project 1",
     description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum impedit repudiandae, ratione aliquam aliquid quas magnam ipsa officia magni amet.",
     stack: [{ name: "HTML 5" }, { name: "CSS 3" }, { name: "Javascript" },],
@@ -122,6 +125,7 @@ const Work = () => {
               </div>
               {/* project category */}
               <h2 className="text-[34px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">{project.category} project</h2>
+              <h3 className="text-[28px] font-semibold leading-none text-[var(--accent-hover)]">{project.name}</h3>
               {/* project description */}
               <p className="text-white/80">{project.description}</p>
               {/* stack */}
@@ -170,8 +174,7 @@ const Work = () => {
                   </div>
                 </SwiperSlide>
               })}
-              {/* slider button */}
-              {/* <SliderBtn containerStyles="flex gap-2 absolute top-0 bottom-[calc(50%-40px)] lg:bottom-0 z-20 w-full justify-between lg:w-max lg:justify-none" /> */}
+
               <SliderBtn
                 containerStyles="absolute z-20 top-1/2 -translate-y-1/2 w-full px-2 flex justify-between items-center
                    lg:top-auto lg:bottom-0 lg:right-2  lg:w-auto lg:px-0 lg:gap-4"
