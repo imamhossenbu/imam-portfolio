@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
 import CustomCursor from "@/components/CustomCursor";
+import { Toaster } from 'react-hot-toast'
 
 
 
@@ -28,6 +29,19 @@ export default function RootLayout({ children }) {
         <Header />
         <StairTransition />
         <CustomCursor />
+        <Toaster
+          position="top-center"
+          toastOptions={{
+            className: '',
+            duration: 3000,
+            style: {
+              background: '#27272c',
+              color: '#fff',
+              fontFamily: 'var(--font-jetbrainsMono)',
+              fontSize: '16px',
+            },
+          }}
+        />
         <PageTransition>
           {children}
 
