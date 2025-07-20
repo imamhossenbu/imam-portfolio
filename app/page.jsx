@@ -28,17 +28,23 @@ export default function Home() {
             </p>
             {/* social media */}
             <div className="flex flex-col lg:flex-row gap-4  items-center">
+              {/* <Button className="cursor-pointer border-1 border-[var(--accent)] hover:border-0 text-md rounded-full text-[var(--accent)] hover:bg-[var(--accent-hover)] hover:text-[var(--primary)]">
+                <Link href="/resume.pdf" download target="_blank"><span>Download CV</span></Link>
+                <FiDownload className="text-xl" />
+              </Button> */}
               <Button className="cursor-pointer border-1 border-[var(--accent)] hover:border-0 text-md rounded-full text-[var(--accent)] hover:bg-[var(--accent-hover)] hover:text-[var(--primary)]">
-                <Link href="/Imam_Hossen_Resume.pdf" download target="_blank"><span>Download CV</span></Link>
+                <a href="https://drive.google.com/uc?export=download&id=1JG0Rce49w2Pw6x2mNJKQ1b9MFieaG2BX" target="_blank" rel="noopener noreferrer">
+                  <span>Download CV</span>
+                </a>
                 <FiDownload className="text-xl" />
               </Button>
+
               <div className="">
                 <Socials containerStyles="flex gap-4" iconStyles="w-9 h-9 border border-[var(--accent)] flex justify-center rounded-full items-center text-[var(--accent)] hover:bg-[var(--accent-hover)] hover:text-[var(--primary)] hover:transition-all duration-500" />
               </div>
             </div>
           </div>
           <div className="order-1 lg:order-none" >
-
             <Photo />
           </div>
         </div>
