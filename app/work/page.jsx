@@ -19,8 +19,20 @@ const projects = [
   {
     num: "01",
     category: "full stack",
-    name: "PeddyCare",
+    name: "E-Quesheet(Betar Barisal)",
     title: "project 1",
+    description: "A user-friendly web application that facilitates Quesheet by allowing user to browse and  admin to browse, manage, and add different song and ceremony. The platform includes authentication, and admin functionalities for better management.",
+    stack: [{ name: "Next JS" }, { name: "Express JS" }, { name: "Node JS" }, { name: "MongoDb" }, { name: "Tailwind CSS" }, { name: "Firebase" }, { name: "JWT" },],
+    image: "/assets/work/betar.png",
+    live: "https://equesheet.com/",
+    clientRepo: "https://github.com/imamhossenbu/betar-demo",
+    serverRepo: "https://github.com/imamhossenbu/betar-Server"
+  },
+  {
+    num: "02",
+    category: "full stack",
+    name: "PeddyCare",
+    title: "project 2",
     description: "A user-friendly web application that facilitates pet adoption by allowing users to browse, adopt, and contribute to pet adoption campaigns. The platform includes authentication, payment integration, and admin functionalities for better management.",
     stack: [{ name: "React JS" }, { name: "Express JS" }, { name: "Node JS" }, { name: "MongoDb" }, { name: "Tailwind CSS" }, { name: "Firebase" }, { name: "Stripe" }, { name: "JWT" },],
     image: "/assets/work/peddycare.png",
@@ -29,10 +41,10 @@ const projects = [
     serverRepo: "https://github.com/imamhossenbu/PeddyCare-Server"
   },
   {
-    num: "02",
+    num: "03",
     category: "full stack",
     name: "HonestView",
-    title: "project 2",
+    title: "project 3",
     description: "A full-stack service review platform where users can interact with services, post and manage reviews, and perform CRUD operations on services and reviews.",
     stack: [{ name: "React JS" }, { name: "Express JS" }, { name: "Node JS" }, { name: "MongoDb" }, { name: "Tailwind CSS" }, { name: "Firebase" }, { name: "JWT" },],
     image: "/assets/work/honestview.png",
@@ -41,10 +53,10 @@ const projects = [
     serverRepo: "https://github.com/imamhossenbu/HonestView-Server"
   },
   {
-    num: "03",
+    num: "04",
     category: "full stack",
     name: "MovieVerse",
-    title: "project 3",
+    title: "project 4",
     description: "Movieverse is an easy-to-use movie portal that allows users to explore movies, view movie details, add and delete movies, and manage their favorite movies.",
     stack: [{ name: "React JS" }, { name: "Express JS" }, { name: "Node JS" }, { name: "MongoDb" }, { name: "Tailwind CSS" }, { name: "Firebase" }, { name: "JWT" },],
     image: "/assets/work/movieverse.png",
@@ -53,9 +65,9 @@ const projects = [
     serverRepo: "https://github.com/imamhossenbu/movieverse-server"
   },
   {
-    num: "04",
+    num: "05",
     category: "frontend",
-    title: "project 4",
+    title: "project 5",
     name: "EcoExplorer",
     description: "Eco-Adventure Experiences is a blog website designed to showcase various eco-friendly travel adventures, including mountain treks, ocean dives, wildlife safaris, and more.",
     stack: [{ name: "React JS" }, { name: "Tailwind CSS" }, { name: "Firebase" }, { name: "DaisyUI" }, { name: "React Router" },],
@@ -64,9 +76,9 @@ const projects = [
     clientRepo: "https://github.com/imamhossenbu/EcoExplorer",
   },
   {
-    num: "05",
+    num: "06",
     category: "frontend",
-    title: "project 5",
+    title: "project 6",
     name: "GadgetHeaven",
     description: "GadgetHeaven enables users to browse gadgets by categories or details, and manage their wishlist and cart with ease.",
     stack: [{ name: "React JS" }, { name: "Tailwind CSS" }, { name: "React Router" },],
@@ -75,9 +87,9 @@ const projects = [
     clientRepo: "https://github.com/imamhossenbu/gadget-heaven",
   },
   {
-    num: "06",
+    num: "07",
     category: "frontend",
-    title: "project 6",
+    title: "project 7",
     name: " Dream 11",
     description: "The BPL Dream 11 Team Selector allows users to build a team by selecting players within a coin-based budget.",
     stack: [{ name: "React JS" }, { name: "Tailwind CSS" },],
@@ -86,9 +98,9 @@ const projects = [
     clientRepo: "https://github.com/imamhossenbu/dream11-website/tree/main/my-project",
   },
   {
-    num: "07",
+    num: "08",
     category: "frontend",
-    title: "project 7",
+    title: "project 8",
     name: "Peddy",
     description: "Peddy features dynamic pet listings with details such as name, breed, age, gender, and price. It allows users to filter pets by categories, view detailed information in a modal, and adopt pets through a countdown confirmation modal. ",
     stack: [{ name: "HTML 5" }, { name: "Tailwind CSS" }, { name: "Javascript" }, { name: "API" }],
@@ -97,9 +109,9 @@ const projects = [
     clientRepo: "https://github.com/imamhossenbu/pat-adoption-website",
   },
   {
-    num: "08",
+    num: "09",
     category: "frontend",
-    title: "project 8",
+    title: "project 9",
     name: "Donate",
     description: "Donate now to support various causes in Bangladesh. Your contributions will provide crucial relief to those affected by disasters and movements.",
     stack: [{ name: "HTML 5" }, { name: "Tailwind CSS" }, { name: "Javascript" },],
@@ -108,9 +120,9 @@ const projects = [
     clientRepo: "https://github.com/imamhossenbu/B10-assignment-5",
   },
   {
-    num: "09",
+    num: "10",
     category: "frontend",
-    title: "project 9",
+    title: "project 10",
     name: "Weather App",
     description: "Weather App is a simple weather application that provides current weather information for any city. Users can search for a city and view the current temperature, humidity, and weather conditions.",
     stack: [{ name: "HTML 5" }, { name: "Tailwind CSS" }, { name: "Javascript" },],
@@ -119,9 +131,9 @@ const projects = [
     clientRepo: "https://github.com/imamhossenbu/weather-app",
   },
   {
-    num: "10",
+    num: "11",
     category: "frontend",
-    title: "project 10",
+    title: "project 11",
     name: "Rinterio",
     description: "Rinterio is a static rental website built with HTML and CSS. It showcases rental items with clean design, allowing users to view item details and explore the layout.",
     stack: [{ name: "HTML 5" }, { name: "Tailwind CSS" },],
@@ -130,9 +142,9 @@ const projects = [
     clientRepo: "https://github.com/imamhossenbu/B10-assignment-3",
   },
   {
-    num: "11",
+    num: "12",
     category: "frontend",
-    title: "project 11",
+    title: "project 12",
     name: "Fitness",
     description: "The Fitness platform is a static website includes sections like workout programs, BMI calculator, habit formation tips, trainer profiles, and more.",
     stack: [{ name: "HTML 5" }, { name: "CSS 3" }],
@@ -141,9 +153,9 @@ const projects = [
     clientRepo: "https://github.com/imamhossenbu/B10-assignment2",
   },
   {
-    num: "12",
+    num: "13",
     category: "frontend",
-    title: "project 12",
+    title: "project 13",
     name: "Hero Travel",
     description: "Hero Travel is a static travel website that showcases various travel packages and destinations. It features a clean design and provides information about different travel options.",
     stack: [{ name: "HTML 5" }, { name: "CSS 3" },],
@@ -239,7 +251,7 @@ const Work = () => {
                     <div className="absolute top-0 bottom-0 w-full h-full bg-black/5 z-10"></div>
                     {/* image */}
                     <div className="relative   w-full aspect-[3/2] ">
-                      <Image src={project.image} fill className="object-cover" alt="" />
+                      <Image src={project.image} fill className={`object-${project.num === "01" ? "contain" : "cover"}`} alt="" />
                     </div>
                   </div>
                 </SwiperSlide>
