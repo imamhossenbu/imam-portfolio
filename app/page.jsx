@@ -29,7 +29,7 @@ export default function Home() {
             {/* social media */}
             <div className="flex flex-col lg:flex-row gap-4  items-center">
               <Button className="cursor-pointer border-1 border-[var(--accent)] hover:border-0 text-md rounded-full text-[var(--accent)] hover:bg-[var(--accent-hover)] hover:text-[var(--primary)]">
-                <Link href="/myResume.pdf" download target="_blank"><span>Download CV</span></Link>
+                <Link href="/Imam_Hossen_Resume.pdf" download target="_blank"><span>Download CV</span></Link>
                 <FiDownload className="text-xl" />
               </Button>
               <div className="">
