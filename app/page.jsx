@@ -33,9 +33,10 @@ export default function Home() {
                 <FiDownload className="text-xl" />
               </Button> */}
               <Button className="cursor-pointer border-1 border-[var(--accent)] hover:border-0 text-md rounded-full text-[var(--accent)] hover:bg-[var(--accent-hover)] hover:text-[var(--primary)]">
-                <a href="https://drive.google.com/uc?export=download&id=1JG0Rce49w2Pw6x2mNJKQ1b9MFieaG2BX" target="_blank" rel="noopener noreferrer">
+                <a href="https://docs.google.com/document/d/1gbWFCHir2mUK8nu1FmVOIYdljxuteu9pR2oWX0phfzs/export?format=pdf" target="_blank" rel="noopener noreferrer">
                   <span>Download CV</span>
                 </a>
+
                 <FiDownload className="text-xl" />
               </Button>
 
